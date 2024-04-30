@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Clicker+Script&family=Lugrasimo&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+#Home,
+#About,
+#Service,
+#Portfolio,
+#Contact {
+    scroll-behavior: smooth;
+}
+
+.aside {
+    background-color: whitesmoke;
+    width: 250px;
+    height: 100%;
+    padding: 30px;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside .logo {
+    position: absolute;
+    top: 50px;
+    text-transform: uppercase;
+}
+
+.aside .logo h1 {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px 20px;
+    font-family: "Lugrasimo";
+    letter-spacing: 3px;
+    font-weight: 400;
+
+}
+
+.aside .logo h1::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #191970;
+    border-left: 5px solid #191970;
+    bottom: 0;
+    left: 0;
+}
+
+.aside .logo h1::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-top: 5px solid #191970;
+    border-right: 5px solid #191970;
+    top: 0;
+    right: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 50px;
+    font-size: x-large;
+    color: black;
+    border-bottom: 1px solid darkgrey;
+    font-family: serif;
+    font-weight: bolder;
+}
+
+ul li a.active {
+    color: #191970;
+}
+
+ul li a i {
+    margin-right: 15px;
+}
+
+.main-contect {
+    margin-left: 290px;
+}
+
+.section {
+    display: block;
+    min-height: 100vh;
+    padding: 0 30px;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+
+.home {
+    display: flex;
+    min-height: 100vh;
+}
+
+.home .home-img img {
+    height: 300px;
+    width: 300px;
+}
+
+.home .home-info {
+    flex: 0 0 60%;
+    max-width: 0 0 60%;
+}
+
+.home .home-img {
+    flex: 0 0 40%;
+    max-width: 0 0 40%;
+    text-align: center;
+    position: relative;
+}
+
+h3.hello {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+h3.hello span {
+    font-family: "Lugrasimo";
+    color: #191970;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h3.my-professeion {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.typeing {
+    color: #191970;
+}
+
+.home-info p {
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #191970;
+    font-size: 20px;
+    padding: 12px 35px;
+    font-weight: 500;
+    border-radius: 40px;
+    color: white;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.home-img::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-bottom: 5px solid #191970;
+    border-right: 5px solid #191970;
+    right: 20px;
+    bottom: -50px;
+}
+
+.home-img::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-top: 5px solid #191970;
+    border-left: 5px solid #191970;
+    left: 20px;
+    top: -40px;
+}
+
+.hidden {
+    display: none !important;
+
+}
+
+.section .container {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.second-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 30px;
+    margin-bottom: 60px;
+}
+
+.second-title h2 {
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+}
+
+.second-title h2::before {
+    content: "";
+    height: 4px;
+    width: 60px;
+    background-color: #191970;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.second-title h2::after {
+    content: "";
+    height: 4px;
+    width: 30px;
+    background-color: #191970;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 9px;
+}
+
+.about .about-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 50px;
+    margin-bottom: 60px;
+}
+
+.about .about-content .about-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text h3 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.about .about-content .about-text h3 span {
+    color: #191970;
+}
+
+.about .about-content .about-text p {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.about .about-content .personal-info {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+
+.about .about-content .skills {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 40px;
+}
+
+.about .about-content .personal-info .info-iteam {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-left: 20px;
+}
+
+.about .about-content .personal-info .info-iteam p {
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 16px;
+    border-bottom: 1px solid grey;
+}
+
+.about .about-content .personal-info .info-iteam p span {
+    font-weight: 400;
+    margin-left: 6px;
+    display: inline-block;
+}
+
+.about .about-content .personal-info .buttons {
+    margin-top: 30px;
+}
+
+.about .about-content .personal-info .buttons .btn {
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.about .about-content .skills .skill-iteam {
+    flex: 0 0 100%;
+    max-width: 90%;
+}
+
+.about .about-content .skills .skill-iteam h3 {
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.about .about-content .skills .skill-iteam .progress {
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    background-color: #a9b7b9;
+    position: relative;
+}
+
+.about .about-content .skills .skill-iteam {
+    margin-bottom: 30px;
+}
+
+.about .about-content .skills .skill-iteam .progress .progress-in {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: #191970;
+}
+
+.about .about-content .skills .skill-iteam .skill-percent {
+    position: absolute;
+    right: 0;
+    top: -39px;
+    font-weight: 500;
+    font-size: large;
+    line-height: 40px;
+}
+
+.about .about-content .education,
+.about .about-content .experience {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+
+.about .about-content h4.title {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.about .about-content .timeline-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .timeline {
+    background-color: whitesmoke;
+    padding: 30px 15px;
+    border-radius: 10px;
+    width: 80%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.shawbox-drak {
+    box-shadow: 0 0 20px rgba(56, 56, 77, 0.15);
+}
+
+.about .about-content .timeline .timeline-time {
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+
+.about .about-content .timeline .timeline-time:last-child {
+    padding-bottom: 0;
+}
+
+.about .about-content .timeline .timeline-time::before {
+    content: "";
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: #191970;
+
+}
+
+.about .about-content .timeline .circle-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #191970;
+}
+
+.about .about-content .timeline .timeline-date {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #191970;
+}
+
+.about .about-content .timeline .timeline-date i {
+    margin-right: 15px;
+}
+
+.about .about-content .timeline .timeline-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.about .about-content .timeline .timeline-text {
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+}
+
+.section-title h2::before {
+    content: "";
+    height: 4px;
+    width: 60px;
+    background-color: #191970;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.section-title h2::after {
+    content: "";
+    height: 4px;
+    width: 30px;
+    background-color: #191970;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 9px;
+}
+
+.Service .Service-item {
+    flex: 0 0 30%;
+    max-width: 100%;
+    margin-bottom: 30px;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+
+.Service .Service-item .Service-item-inner {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 30px 15px;
+}
+
+.Service .Service-item .Service-item-inner:hover {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    cursor: pointer;
+}
+
+.Service .Service-item .Service-item-inner .icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.Service .Service-item .Service-item-inner .icon i {
+    font-size: 40px;
+    line-height: 60px;
+    color: #191970;
+}
+
+.Service .Service-item .Service-item-inner h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: black;
+    text-align: center;
+}
+
+.Service .Service-item .Service-item-inner p {
+    font-size: 18px;
+    line-height: 25px;
+    color: black;
+    text-align: center;
+}
+
+.Service .container {
+    margin-bottom: 40px;
+}
+
+.Portfolio .Portfolio-heading {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 20px;
+    margin-top: 35px;
+}
+
+.Portfolio .Portfolio-heading h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+}
+
+.Portfolio .container {
+    padding-bottom: 40px;
+}
+
+.Portfolio .Portfolio-iteam {
+    flex: 0 0 30%;
+    max-width: 100%;
+    margin-bottom: 30px;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+
+.img1 {
+    width: 300px;
+    height: 300px;
+}
+
+.Portfolio .Portfolio-iteam-inner {
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    border: 6px solid whitesmoke;
+}
+
+.Portfolio .Portfolio-iteam-inner .Portfolio-img .img1 {
+    width: 100%;
+    display: block;
+}
+
+.contact-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #191970;
+    margin-bottom: 22px;
+}
+
+.contact-sub-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #191970;
+    margin-bottom: 60px;
+}
+
+.contact .contact-info-iteam {
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+}
+
+.contact .contact-info-iteam .icon {
+    display: inline-block;
+}
+
+.contact .contact-info-iteam .icon i {
+    font-size: 25px;
+    color: #191970;
+}
+
+.contact .contact-info-iteam h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+
+.contact .contact-info-iteam p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.contact .contact-from {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact .contact-from .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.contact .contact-from .col-12 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.contact .contact-from .form-iteam {
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+.contact .contact-from .form-iteam .form-control {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    border: 1px solid #191970;
+}
+
+.contact .contact-from .form-iteam .form-control:focus {
+    box-shadow: 0 0 20px rgba(77, 77, 77, 0.15);
+}
+
+.contact .contact-from .form-iteam textarea.form-control {
+    height: 120px;
+}
